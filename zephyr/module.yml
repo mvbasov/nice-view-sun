@@ -1,4 +1,4 @@
-name: "zmk-shield-nice!view-gem"
+name: "zmk-shield-nice!view-sun"
 build:
   settings:
     board_root: .
