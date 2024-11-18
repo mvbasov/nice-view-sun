@@ -1,3 +1,14 @@
+# nice-view-sun
+This is fork of https://github.com/M165437/nice-view-gem
+
+Big thanks to [Michael Schmidt-Voigt](https://github.com/M165437) for the nice-view-gem
+
+The only purpose of this fork is to change animation. I don't know how to change animaton frames by overlay, unfortunately...
+
+---
+The origial RAEDME below
+---
+
 # nice-view-gem
 
 ![Preview](https://github.com/m165437/nice-view-gem/blob/main/.github/assets/preview.jpg?raw=true)
