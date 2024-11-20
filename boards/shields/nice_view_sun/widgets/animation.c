@@ -36,14 +36,14 @@ LV_IMG_DECLARE(TheSun6);
 
 const lv_img_dsc_t *anim_imgs[] = {
     &TheSun0, &TheSun1, &TheSun2, &TheSun3, &TheSun4, &TheSun5, &TheSun6,
-    &TheSun5, &TheSun4, &TheSun3, &TheSun2, &TheSun1
+    &TheSun5, &TheSun4, &TheSun3, &TheSun2, &TheSun1,
 };
 void draw_animation(lv_obj_t *canvas) {
 #if IS_ENABLED(CONFIG_NICE_VIEW_SUN_ANIMATION)
     lv_obj_t *art = lv_animimg_create(canvas);
     lv_obj_center(art);
 
-    lv_animimg_set_src(art, (const void **)anim_imgs, 16);
+    lv_animimg_set_src(art, (const void **)anim_imgs, 12);
     lv_animimg_set_duration(art, CONFIG_NICE_VIEW_SUN_ANIMATION_MS);
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
     lv_animimg_start(art);
@@ -57,5 +57,5 @@ void draw_animation(lv_obj_t *canvas) {
     lv_img_set_src(art, anim_imgs[random_index]);
 #endif
 
-    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);
+    lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
 }
