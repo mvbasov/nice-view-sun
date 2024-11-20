@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <zephyr/kernel.h>
 #include "animation.h"
-
+/*
 LV_IMG_DECLARE(crystal_01);
 LV_IMG_DECLARE(crystal_02);
 LV_IMG_DECLARE(crystal_03);
@@ -24,7 +24,20 @@ const lv_img_dsc_t *anim_imgs[] = {
     &crystal_07, &crystal_08, &crystal_09, &crystal_10, &crystal_11, &crystal_12,
     &crystal_13, &crystal_14, &crystal_15, &crystal_16,
 };
+*/
 
+LV_IMG_DECLARE(TheSun0);
+LV_IMG_DECLARE(TheSun1);
+LV_IMG_DECLARE(TheSun2);
+LV_IMG_DECLARE(TheSun3);
+LV_IMG_DECLARE(TheSun4);
+LV_IMG_DECLARE(TheSun5);
+LV_IMG_DECLARE(TheSun6);
+
+const lv_img_dsc_t *anim_imgs[] = {
+    &TheSun0, &TheSun1, &TheSun2, &TheSun3, &TheSun4, &TheSun5, &TheSun6,
+    &TheSun5, &TheSun4, &TheSun3, &TheSun2, &TheSun1
+};
 void draw_animation(lv_obj_t *canvas) {
 #if IS_ENABLED(CONFIG_NICE_VIEW_SUN_ANIMATION)
     lv_obj_t *art = lv_animimg_create(canvas);
