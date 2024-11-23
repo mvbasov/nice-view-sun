@@ -33,7 +33,7 @@ LV_IMG_DECLARE(TheSun3);
 LV_IMG_DECLARE(TheSun4);
 LV_IMG_DECLARE(TheSun5);
 LV_IMG_DECLARE(TheSun6);
-LV_IMG_DECLARE(grid);
+LV_IMG_DECLARE(debug_grid);
 
 /*
 const lv_img_dsc_t *anim_imgs[] = {
@@ -42,7 +42,7 @@ const lv_img_dsc_t *anim_imgs[] = {
 };
 */
 const lv_img_dsc_t *anim_imgs[] = {
-    &grid, &TheSun1, &TheSun2, &TheSun3, &TheSun4, &TheSun5, &TheSun6,
+    &debug_grid, &TheSun1, &TheSun2, &TheSun3, &TheSun4, &TheSun5, &TheSun6,
     &TheSun5, &TheSun4, &TheSun3, &TheSun2, &TheSun1,
 };
 void draw_animation(lv_obj_t *canvas) {

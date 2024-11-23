@@ -644,11 +644,11 @@ const lv_img_dsc_t TheSun6 = {
   .data = TheSun6_map,
 };
 
-#ifndef LV_ATTRIBUTE_IMG_GRID
-#define LV_ATTRIBUTE_IMG_GRID
+#ifndef LV_ATTRIBUTE_IMG_DEBUG_GRID
+#define LV_ATTRIBUTE_IMG_DEBUG_GRID
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GRID uint8_t grid_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GRID uint8_t debug_grid_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
   0x00, 0x00, 0x00, 0x0c, 	/*Color of index 0*/
   0x00, 0x00, 0x00, 0xe2, 	/*Color of index 1*/
@@ -726,12 +726,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GRID uint
   0x84, 0x21, 0x08, 0x42, 0x10, 0x84, 0x21, 0x08, 0x42, 0x10, 0x84, 0x21, 0x08, 0x42, 0x10, 0x84, 0x21, 0x00, 
 };
 
-const lv_img_dsc_t grid = {
+const lv_img_dsc_t debug_grid = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 140,
   .header.h = 68,
   .data_size = 1232,
-  .data = grid_map,
+  .data = debug_grid_map,
 };
