@@ -22,6 +22,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
+static struct zmk_widget_modifiers modifiers_widget;
 #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
 static struct zmk_widget_hid_indicators hid_indicators_widget;
 #endif
