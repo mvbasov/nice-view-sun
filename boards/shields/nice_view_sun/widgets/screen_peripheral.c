@@ -125,7 +125,7 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     widget_peripheral_status_init();
 
     #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
-    zmk_widget_hid_indicators_init(&hid_indicators_widget, screen);
+    zmk_widget_hid_indicators_init(&hid_indicators_widget, widget->obj);
     lv_obj_align_to(zmk_widget_hid_indicators_obj(&hid_indicators_widget), zmk_widget_modifiers_obj(&modifiers_widget), LV_ALIGN_OUT_TOP_LEFT, 0, -2);
     #endif
 
