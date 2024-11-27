@@ -33,9 +33,15 @@ LV_IMG_DECLARE(TheSun3);
 LV_IMG_DECLARE(TheSun4);
 LV_IMG_DECLARE(TheSun5);
 LV_IMG_DECLARE(TheSun6);
+LV_IMG_DECLARE(TheSun0Grid);
+
 
 const lv_img_dsc_t *anim_imgs[] = {
+#if IS_ENABLED(CONFIG_NICE_VIEW_SUN_DEBUG_GRID)
+    &TheSun0Grid, &TheSun1, &TheSun2, &TheSun3, &TheSun4, &TheSun5, &TheSun6,
+#else
     &TheSun0, &TheSun1, &TheSun2, &TheSun3, &TheSun4, &TheSun5, &TheSun6,
+#endif
     &TheSun5, &TheSun4, &TheSun3, &TheSun2, &TheSun1,
 };
 
