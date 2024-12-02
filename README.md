@@ -5,7 +5,7 @@ Big thanks to [Michael Schmidt-Voigt](https://github.com/M165437) for the nice-v
 
 The only purpose of this fork is to change animation to:
 
-![New animation](https://raw.githubusercontent.com/mvbasov/nice-view-sun/refs/heads/main/.github/assets/TheSun.gif?raw=true)
+![New animation](https://raw.githubusercontent.com/mvbasov/nice-view-sun/refs/heads/main/.github/assets/TheSun_hw.gif?raw=true)
 
 I don't know how to change animaton frames by overlay, unfortunately...
 
